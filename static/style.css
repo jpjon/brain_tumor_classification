@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efecec;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3E8E41;
+}
+
+#result {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#image-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.responsive-image {
+    max-width: 100%; /* This ensures the image won't be larger than its container */
+    height: auto; /* This maintains the aspect ratio of the image */
+  }
+  
