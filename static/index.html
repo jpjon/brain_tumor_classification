@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <div id="top-bar">Jonathan Phan</div>
     <h1>Brain Tumor Classification</h1>
+    <p>This is a web application that uses a convolutional neural network (CNN) to classify brain tumor images into 4 distinct categories: <br> 
+        <br>
+        <strong>0. No Tumor</strong><br>
+        <strong>1. Glioma</strong><br>
+        <strong>2. Meningioma</strong><br>
+        <strong>3. Pituitary</strong><br>
+        <br>
+        Simply upload an image of a brain tumor and the application will predict the type of tumor based on the image features. The application is designed to assist medical professionals in the diagnosis and treatment of brain tumors.</p>
+    <br>
+    <p>For more information about the project, please visit the <a href=https://github.com/jpjon/brain_tumor_classification>GitHub repository</a>.</p>
     <form id="upload-form">
-        <input type="file" id="image-file" accept="image/*">
+        <input type="file" id="image-file" accept="image/jpeg, image/png, image/heic, image/heif, image/*">
         <button type="submit">Classify</button>
     </form>
     <div id="image-container"></div>
