@@ -38,7 +38,10 @@
                 alert('Please select an image file');
                 return;
             }
-            
+            if (imageFile.type !== 'image/jpeg' && imageFile.type !== 'image/png' && imageFile.type !== 'image/heic' && imageFile.type !== 'image/heif') {
+                alert('Please select a valid image file (JPEG, PNG, HEIC, or HEIF)');
+                return;
+            }
             const formData = new FormData();
             formData.append('file', imageFile);
             
